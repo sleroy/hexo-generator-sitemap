@@ -18,10 +18,5 @@
   </url>
   {% endfor %}
 
-   {% for tag in tags %}
-  <url>
-    <loc>{{ tag.path | uriencode  }}</loc>
-    <lastmod>{{ tag.updated.toISOString() }}</lastmod>
-  </url>
-  {% endfor %}
+  
 </urlset>
